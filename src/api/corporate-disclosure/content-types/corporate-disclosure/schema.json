@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_disclosures",
+  "info": {
+    "singularName": "corporate-disclosure",
+    "pluralName": "corporate-disclosures",
+    "displayName": "Corporate Disclosure"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

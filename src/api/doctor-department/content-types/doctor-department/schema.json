@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctor_departments",
+  "info": {
+    "singularName": "doctor-department",
+    "pluralName": "doctor-departments",
+    "displayName": "Doctor Department",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "doctors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::doctor.doctor",
+      "mappedBy": "doctor_departments"
+    }
+  }
+}

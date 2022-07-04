@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Doctor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fname": {
+      "type": "string"
+    },
+    "mname": {
+      "type": "string"
+    },
+    "lname": {
+      "type": "string"
+    },
+    "extensionName": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "specializations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::specialization.specialization",
+      "inversedBy": "doctors"
+    },
+    "schedule": {
+      "type": "component",
+      "repeatable": true,
+      "component": "doctors.schedule"
+    },
+    "extension": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "doctor_departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::doctor-department.doctor-department",
+      "inversedBy": "doctors"
+    },
+    "clinicNumber": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "biography": {
+      "type": "text"
+    },
+    "education": {
+      "type": "text"
+    },
+    "experience": {
+      "type": "text"
+    },
+    "isFounder": {
+      "type": "boolean"
+    }
+  }
+}

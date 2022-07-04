@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ads_and_promotions",
+  "info": {
+    "singularName": "ads-and-promotion",
+    "pluralName": "ads-and-promotions",
+    "displayName": "Ads And Promotion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

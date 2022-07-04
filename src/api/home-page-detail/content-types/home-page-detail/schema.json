@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_page_details",
+  "info": {
+    "singularName": "home-page-detail",
+    "pluralName": "home-page-details",
+    "displayName": "Home Page Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

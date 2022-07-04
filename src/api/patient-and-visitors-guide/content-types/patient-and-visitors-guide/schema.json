@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patient_and_visitors_guides",
+  "info": {
+    "singularName": "patient-and-visitors-guide",
+    "pluralName": "patient-and-visitors-guides",
+    "displayName": "Patient and Visitors Guide"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "featuredImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "specializations",
+  "info": {
+    "singularName": "specialization",
+    "pluralName": "specializations",
+    "displayName": "Specialization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "doctors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::doctor.doctor",
+      "mappedBy": "specializations"
+    }
+  }
+}
