@@ -1,7 +1,7 @@
 version: "3"
 services:
   app-strapi:
-    build: ./
+    build: .
     environment:
     - ADMIN_JWT_SECRET=xUeC6EljH2yHdI+X1XQSiw
     - API_TOKEN_SALT=SybwM3mvmMOeXCUISqqJCw
