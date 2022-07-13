@@ -9,7 +9,7 @@ services:
     - CLOUDINARY_KEY=923846922276386
     - CLOUDINARY_NAME=acemc
     - CLOUDINARY_SECRET=AHYBI0MXzqxHiO_K94gMcJX5ahM
-    - DATABASE_URL="postgresql://postgres:@172.16.10.101:5432/acewebdb"
+    - DATABASE_URL=postgresql://postgres:@172.16.10.101:5432/acewebdb
     - JWT_SECRET=AXLAw1OsW/Lj8mIZZyRaHQ
     - NODE_ENV=production
     ports:
